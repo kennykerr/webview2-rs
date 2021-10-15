@@ -1,12 +1,12 @@
 use bindings::*;
-use microsoft::web::web_view2::core::*;
+use Microsoft::Web::WebView2::Core::*;
 
-fn main() -> winrt::Result<()> {
+fn main() -> windows::Result<()> {
     let options = CoreWebView2EnvironmentOptions::new()?;
 
-    options.set_language("croak")?;
+    options.SetLanguage("croak")?;
 
-    println!("{}", options.language()?);
+    println!("{}", options.Language()?);
 
     Ok(())
 }

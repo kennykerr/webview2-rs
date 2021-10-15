@@ -1,5 +1,5 @@
 fn main() {
-    winrt::build!(
-        microsoft::web::web_view2::core::*
+    windows::build!(
+        Microsoft::Web::WebView2::Core::*
     );
 }
